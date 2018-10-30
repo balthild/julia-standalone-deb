@@ -1,9 +1,9 @@
 #!/bin/bash
-export srcurl="https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz"
-export srcdir="julia-d55cadc350"
-export version="0.6.3"
+srcurl="https://julialang-s3.julialang.org/bin/linux/x64/1.0/julia-1.0.1-linux-x86_64.tar.gz"
+srcdir="julia-1.0.1"
+version="1.0.1"
 
-export tmpdir=$(mktemp -d)
+tmpdir=$(mktemp -d)
 
 wget $srcurl -O $tmpdir/julia.tar.gz
 tar zxvf $tmpdir/julia.tar.gz
